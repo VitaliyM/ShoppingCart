@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>MyTest</title>
+</head>
+<body>
+    <div class="popUp">
+        <div class="popUp_outside">
+            <div class="popUp_block">
+                <div class="popUp_text"><span>Voyez ce jeu</span> exquis wallon.</div>
+                <button class="popUp_btn">ok</button>
+                <div class="popUp_close"></div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo"></div>
+        <div class="menu_block">
+            <div class="menu_products">Products</div>
+            <div class="menu_support">Customer support</div>
+            <div class="menu_about">About us</div>
+            <div class="signUp">Sign up</div>
+        </div>
+    </header>
+    <section class="lorem_block">
+        <div class="loremBlock_header">Lorem ipsum dolor sit</div>
+        <div class="loremTimer_block">
+            <div class="timer timerDays_block">
+                <div class="timer_num">00</div>
+                <div class="timer_text">days</div>
+            </div>
+            <div class="timer timerHours_block">
+                <div class="timer_num">00</div>
+                <div class="timer_text">hours</div>
+            </div>
+            <div class="timer timerMinutes_block">
+                <div class="timer_num">00</div>
+                <div class="timer_text">minutes</div>
+            </div>
+            <div class="timer timerSeconds_block">
+                <div class="timer_num timeSeconds">10</div>
+                <div class="timer_text">seconds</div>
+            </div>
+        </div>
+    </section>
+    <section class="blue_block">
+        <div class="slider_block">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/pic1.png" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/pic1.png" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/pic1.png" >
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+        </div>
+        <div class="blueBottom_block">
+            <div class="blueBottomText_block">
+                <div class="blueBottomText_header">Lorem ipsum dolor sit amet, consetetur.</div>
+                <div class="blueBottomText">The quick, brown fox jumps over a lazy dog. 
+                    DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. 
+                    Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! 
+                    Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. 
+                    Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim.
+                </div>
+            </div>
+            <div class="blueBottom_img"></div>
+        </div>
+    </section>
+    <section class="salad_block">
+        <div class="saladText_block">
+            <div class="saladText">Lorem ipsum dolor sit amet, consetetur.</div>
+            <div class="saladSmallImg">
+                <div class="saladImg_1">The quick, brown fox jumps over a lazy dog.</div>
+                <div class="saladImg_2">DJs flock by when MTV ax quiz prog.</div>
+                <div class="saladImg_3">Junk MTV quiz graced by fox whelps.</div>
+                <div class="saladImg_4">Bawds jog, flick quartz, vex nymphs.</div>
+                <div class="saladImg_5">Waltz, bad nymph, for quick jigs vex!</div>
+                <div class="saladImg_6">Fox nymphs grab quick-jived waltz.</div>
+            </div>
+        </div>
+    </section>
+    <section class="tomamto_block">
+        <div class="curve"></div>
+        <div class="contactUs_block">
+            <div class="contactUs_header">Contact us</div>
+            <form action="" method="post" class="formBlock" name="google-sheet">
+                <input type="email" name="Email" placeholder="Email" class="emailForm">
+                <input type="tel" name="Mobile_phone" placeholder="Mobile phone" class="mobileForm">
+                <div class="checkForm"><input type="checkbox" name="">I accept Privacy Policy or a Terms and Conditions</div>
+                <input type="submit" value="Send" class="sendBtn">
+            </form>
+        </div>
+    </section>
+    <section class="table_block">
+        <div class="tableBlock_header">Lorem ipsum dolor sit amet, consetetur.</div>
+        <div class="table">
+            <div class="table_header">
+                <div class="col_postid">Postid</div>
+                <div class="col_id">Id</div>
+                <div class="col_name">Name</div>
+                <div class="col_email">Email</div>
+                <div class="col_body">Body</div>
+            </div>            
+            <template id='tmpl'>
+                <div class="tableRow_1 tableRow">
+                    <div class="tableRow_postid">But I must {{post_id}}</div>
+                    <div class="tableRow_id">The quick, brown {{id}}</div>
+                    <div class="tableRow_name">The quick, brown {{name}}</div>
+                    <div class="tableRow_email">The quick, brown {{email}}</div>
+                    <div class="tableRow_body">The quick, brown fox jumps over a lazy {{body}}</div>
+                </div>
+            </template>
+            <div class="table_gradient"></div>
+        </div>
+        <button class="table_load">Load More</button>
+    </section>
+    <section class="airplane_block">
+        <div id="carouselExampleSlidesOnly" class="carousel slide city" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active city" data-bs-interval="1">
+                <img src="img/city.png" alt="...">
+              </div>
+              <div class="carousel-item city" data-bs-interval="1">
+                <img src="img/city.png" alt="...">
+              </div>              
+            </div>
+          </div>
+        <div class="airplane"></div>
+    </section>
+    <footer>
+        <div class="foot_logo">
+            <div class="lorem_logo"></div>
+            <div class="contacts_block">
+                <div class="contact_mess"></div>
+                <div class="contact_vib"></div>
+                <div class="contact_fb"></div>
+            </div>
+        </div>
+        <div class="footText">
+            <div>Lorem ipsum </div>
+            <div>Sadipscing elit</div>
+            <div>Dolor sit amet</div>
+            <div>Sed diam nonumy.</div>
+        </div>                
+        <div class="footText footText2">
+            <div>Lorem ipsum </div>
+            <div>Sadipscing elit</div>
+            <div>Dolor sit amet</div>
+            <div>Sed diam nonumy.</div>
+        </div>
+        <div class="footText footText2">
+            <div>Lorem ipsum </div>
+            <div>Sadipscing elit</div>
+            <div>Dolor sit amet</div>
+            <div>Sed diam nonumy.</div>
+        </div>
+
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
+</html>
